@@ -1,0 +1,35 @@
+# [0]: pos1
+# [1]: pos2
+# [2]: pos3
+# [3]: pos4
+# [4]: cType
+# [5]: cForm
+# [6]: lForm
+# [7]: lemma
+# [8]: orth
+# [9]: orthBase
+# [10]: pron
+# [11]: pronBase
+# [12]: goshu
+
+UNIGRAM G01:%F[0]
+
+UNIGRAM C01:%F?[4]
+UNIGRAM C03:%F?[4],%F?[5]
+
+UNIGRAM O01:%F?[8]
+UNIGRAM O02:%F?[9]
+
+UNIGRAM P01:%F?[10]
+UNIGRAM P02:%F?[11]
+
+UNIGRAM W01:%F?[12]
+
+UNIGRAM T01:%t
+
+BIGRAM G_G01:%L[0]/%R[0]
+
+BIGRAM O_O01:%L?[6]/%R?[6]
+BIGRAM O_O02:%L?[6]/%R?[7]
+BIGRAM O_O03:%L?[7]/%R?[7]
+
